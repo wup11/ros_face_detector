@@ -1,0 +1,13 @@
+To install:
+- cd catkin workspace directory.
+$ ./src/catkin/bin/catkin_make_isolated --pkg=people_msgs
+$ ./src/catkin/bin/catkin_make_isolated --pkg=face_detector
+
+To get started:
+$ roslaunch face_detector face_detector.rgbd.launch
+
+To Check Result:
+$ rostopic echo /face_detector/faces_pos (Int32MultiArray)
+$ rostopic echo /face_detector/people_tracker_measurements_array/people
+$ rostopic echo /face_detector/people_tracker_measurements_array/people\[0\]
+$ rosrun image_view image_view image:=/face_detector/image_result

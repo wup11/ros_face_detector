@@ -1,0 +1,10 @@
+Header          header
+string          name
+string          object_id
+int32           pos_x
+int32           pos_y
+int32           pos_sum
+geometry_msgs/Point pos
+float64         reliability
+float64[9] 	covariance
+byte            initialization
